@@ -11,7 +11,8 @@ currentDay.append(currentDate);
         //start with 3 rows (until fully functioning)
         //make columns within rows
             //left side displays time
-            //right is where the task go
+            //center is where the task go
+            //right is where the save button is
 
 
 // WHEN I view the time blocks for that day
