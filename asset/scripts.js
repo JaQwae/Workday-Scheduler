@@ -1,6 +1,7 @@
 // GIVEN I am using a daily planner to create a schedule
 // WHEN I open the planner
 // THEN the current day is displayed at the top of the calendar
+
 //displaying the current date
 currentDate = moment().format('dddd, MMM, Do, YYYY, h:mm:ss');
 currentDay.append(currentDate);
@@ -17,7 +18,16 @@ currentDay.append(currentDate);
 
 // WHEN I view the time blocks for that day
 // THEN each time block is color-coded to indicate whether it is in the past, present, or future
-    //function that keeps track of the current time
+
+//function that keeps track of the current time
+function updatedTime () {
+    var timerInterval = setInterval(function() {
+        currentDate++;
+        console.log(currentDate);
+    }, 1000);
+}
+updatedTime();
+
         //use time that we set at the top
         //increment by 1000ms
         //if time pass
