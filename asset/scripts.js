@@ -1,8 +1,9 @@
 // GIVEN I am using a daily planner to create a schedule
 // WHEN I open the planner
 // THEN the current day is displayed at the top of the calendar
-    //displaying the current date
-
+//displaying the current date
+currentDate = moment().format('dddd, MMM, Do, YYYY, h:mm:ss');
+currentDay.append(currentDate);
 
 // WHEN I scroll down
 // THEN I am presented with time blocks for standard business hours
@@ -42,3 +43,4 @@
 
 // WHEN I refresh the page
 // THEN the saved events persist
+    //write out some step for local storage as well as displaying (look at activity 26 in web API for assistance)
