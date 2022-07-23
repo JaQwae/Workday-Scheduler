@@ -3,17 +3,17 @@
 // THEN the current day is displayed at the top of the calendar
 
 //displaying the current date
-currentDate = moment().format('dddd, MMM, Do, YYYY, h:mm:ss');
+currentDate = moment().format('');
 currentDay.append(currentDate);
 
 // WHEN I scroll down
 // THEN I am presented with time blocks for standard business hours
-    //create rows for each hour from 9am-5pm
-        //start with 3 rows (until fully functioning)
-        //make columns within rows
-            //left side displays time
-            //center is where the task go
-            //right is where the save button is
+//create rows for each hour from 9am-5pm
+//start with 3 rows (until fully functioning)
+//make columns within rows
+//left side displays time
+//center is where the task go
+//right is where the save button is
 
 
 // WHEN I view the time blocks for that day
@@ -22,14 +22,12 @@ currentDay.append(currentDate);
 //function that keeps track of the current time
 function updatedTime () {
     var timerInterval = setInterval(function() {
-        currentDate++;
+        currentDate = moment().format('dddd, MMM, Do, YYYY, h:mm:ss');
         console.log(currentDate);
     }, 1000);
 }
+console.log(currentDate);
 updatedTime();
-
-        //use time that we set at the top
-        //increment by 1000ms
         //if time pass
             //set to a color
         //if time equal time
