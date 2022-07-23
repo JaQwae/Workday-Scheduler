@@ -4,8 +4,28 @@
 
 //displaying the current date
 currentDate = moment().format('');
-currentDay.append(currentDate);
+currentDate = document.querySelector('#currentDay');
+currentDay.textContent = moment().format('dddd, MMM, Do, YYYY, h:mm:ss');
 
+//Keeping time up to date without a refresh
+function updatedTime () {
+    var timerInterval = setInterval(function() {
+        currentDate = moment().format('dddd, MMM, Do, YYYY, h:mm:ss');
+        currentDay.textContent = currentDate
+    }, 1000);
+}
+updatedTime();
+
+// WHEN I view the time blocks for that day
+// THEN each time block is color-coded to indicate whether it is in the past, present, or future
+        //if time pass
+            //set to a color
+        //if time equal time
+            //set to a color
+        //else time has not come
+            //set to this color
+
+            
 // WHEN I scroll down
 // THEN I am presented with time blocks for standard business hours
 //create rows for each hour from 9am-5pm
@@ -16,29 +36,15 @@ currentDay.append(currentDate);
 //right is where the save button is
 
 
-// WHEN I view the time blocks for that day
-// THEN each time block is color-coded to indicate whether it is in the past, present, or future
-
-//function that keeps track of the current time
-function updatedTime () {
-    var timerInterval = setInterval(function() {
-        currentDate = moment().format('dddd, MMM, Do, YYYY, h:mm:ss');
-        console.log(currentDate);
-    }, 1000);
-}
-console.log(currentDate);
-updatedTime();
-        //if time pass
-            //set to a color
-        //if time equal time
-            //set to a color
-        //else time has not come
-            //set to this color
 
 
 // WHEN I click into a time block
 // THEN I can enter an event
-    //add event listener where task go
+
+//add event listener where task go
+function taskInput () {
+
+};
     //display text on that corresponding size
 
 
