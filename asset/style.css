@@ -60,7 +60,7 @@ body {
 }
 
 .present {
-  background-color: #ff6961;
+  background-color: #61d5ff;
   color: white;
 }
 
@@ -69,7 +69,6 @@ body {
   color: white;
 }
 
-/* do i need this */
 .description{
   white-space: pre-wrap;
 }

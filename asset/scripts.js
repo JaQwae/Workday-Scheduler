@@ -18,7 +18,32 @@ updatedTime();
 
 // WHEN I view the time blocks for that day
 // THEN each time block is color-coded to indicate whether it is in the past, present, or future
-        //if time pass
+
+// changes color based on the hour of the day
+function hourTracker() {
+
+    var currentHour = moment().hour();
+    
+    $(".time-block").each( function() {
+        var elementHour = parseInt($(this).attr("id"));
+        
+        // hour is styled to the past class
+        if ( elementHour < currentHour ) {
+            $(this).removeClass(["present", "future"]).addClass("past");
+        }
+        // hour is styled to the present class
+        else if ( elementHour === currentHour ) {
+            $(this).removeClass(["past", "future"]).addClass("present");
+        }
+        // hour is styled to the future class
+        else {
+            $(this).removeClass(["past", "present"]).addClass("future");
+        }
+    })
+};
+hourTracker()
+
+//if time pass
             //set to a color
         //if time equal time
             //set to a color
@@ -55,5 +80,3 @@ updatedTime();
 // WHEN I refresh the page
 // THEN the saved events persist
     //write out some step for local storage as well as displaying (look at activity 26 in web API for assistance)
-
-
