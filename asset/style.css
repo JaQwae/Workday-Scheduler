@@ -1,16 +1,33 @@
+:root {
+  --brown: rgb(68, 36, 36);
+  --blueish: #4b8491;
+  --grey: rgb(210, 210, 210);
+}
+
 body {
   font-family: 'Open Sans', sans-serif;
   font-size: 16px;
   line-height: 1;
+  background-color: var(--grey);
 }
 
 /*Container for title, description, and welcome message */
 .jumbotron {
   text-align: center;
-  background-color: transparent;
-  color: black;
+  background-color: var(--blueish);
+  color: var(--brown);
   border-radius: 0;
-  border-bottom: 10px solid black;
+  border-bottom: 10px solid var(--brown);
+}
+
+/* text under heading */
+.lead{
+  color: var(--grey);
+}
+
+/* current time */
+#currentDay{
+  color: var(--grey);
 }
 
 /* Each individual row */
@@ -26,7 +43,7 @@ body {
 .time-block{
   text-align: center;
   border-right: 1px dotted black;
-  color: #000000;
+  color: var(--grey);
 }
 
 /* Area that displays task */
@@ -40,33 +57,34 @@ body {
   display: flex;
 }
 
+/* Text box */
+textarea{
+  background-color: rgba(255, 250, 250, 0.644);
+}
+
 /* Save button */
 .saveBtn {
   border-left: 1px solid black;
-  background-color: #06AED5;
-  color: white;
+  background-color: rgba(255, 250, 250, 0.285);
+  color: var(--grey);
 }
 
-
-/* hover effects on the save button */
-/* .saveBtn i:hover {
-  font-size: 20px;
-  transition: all .3s ease-in-out;
-} */
-
+/* add to hours that passed */
 .past {
-  background-color: #d3d3d3;
-  color: white;
+  background-color: var(--brown);
+  color: var(--grey);
 }
 
+/* added to current time */
 .present {
-  background-color: #61d5ff;
+  background-color: var(--blueish);
   color: white;
 }
 
+/* added to times that haven't occurred yet */
 .future {
-  background-color: #77dd77;
-  color: white;
+  background-color: rgb(188, 106, 120);
+  color: var(--grey);
 }
 
 .description{
