@@ -37,6 +37,13 @@ body {
   color: #000000;
   border-right: 1px dotted black;
   padding: 10px;
+  display: flex;
+}
+
+input{
+  box-sizing: border-box;
+  align-items: stretch;
+  justify-content: stretch;
 }
 
 /* Save button */

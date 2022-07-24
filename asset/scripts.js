@@ -25,7 +25,7 @@ updatedTime();
         //else time has not come
             //set to this color
 
-            
+
 // WHEN I scroll down
 // THEN I am presented with time blocks for standard business hours
 //create rows for each hour from 9am-5pm
@@ -40,11 +40,13 @@ updatedTime();
 
 // WHEN I click into a time block
 // THEN I can enter an event
+var todoItem = '';
+todoItem = document.querySelectorAll('.todo-section');
 
 //add event listener where task go
-function taskInput () {
-
-};
+$( ".todo-section" ).click(function() {
+    var txt = $("#txtArea").val();
+});
     //display text on that corresponding size
 
 
