@@ -40,27 +40,19 @@ body {
   display: flex;
 }
 
-input{
-  box-sizing: border-box;
-  align-items: stretch;
-  justify-content: stretch;
-}
-
 /* Save button */
 .saveBtn {
   border-left: 1px solid black;
-  border-top-right-radius: 15px;
-  border-bottom-right-radius: 15px;
   background-color: #06AED5;
   color: white;
 }
 
 
 /* hover effects on the save button */
-.saveBtn i:hover {
+/* .saveBtn i:hover {
   font-size: 20px;
   transition: all .3s ease-in-out;
-}
+} */
 
 .past {
   background-color: #d3d3d3;

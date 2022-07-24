@@ -40,13 +40,7 @@ updatedTime();
 
 // WHEN I click into a time block
 // THEN I can enter an event
-var todoItem = '';
-todoItem = document.querySelectorAll('.todo-section');
-
 //add event listener where task go
-$( ".todo-section" ).click(function() {
-    var txt = $("#txtArea").val();
-});
     //display text on that corresponding size
 
 
@@ -61,3 +55,5 @@ $( ".todo-section" ).click(function() {
 // WHEN I refresh the page
 // THEN the saved events persist
     //write out some step for local storage as well as displaying (look at activity 26 in web API for assistance)
+
+
