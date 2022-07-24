@@ -1,7 +1,3 @@
-// GIVEN I am using a daily planner to create a schedule
-// WHEN I open the planner
-// THEN the current day is displayed at the top of the calendar
-
 //displaying the current date
 currentDate = moment().format('');
 currentDate = document.querySelector('#currentDay');
@@ -18,39 +14,46 @@ updatedTime();
 
 // WHEN I view the time blocks for that day
 // THEN each time block is color-coded to indicate whether it is in the past, present, or future
+$(document).ready(function(){
+    $('.saveBtn').on('click',function () {
+        console.log(this);
+        var time = $(this).siblings(".description").val();
+        var time = $(this).parent().attr('id');
 
-// changes color based on the hour of the day
+    localStorage.setItem(time, text);
+    })
+})
+// keep track of the current hour
 function hourTracker() {
 
     var currentHour = moment().hour();
     
     $(".time-block").each( function() {
-        var elementHour = parseInt($(this).attr("id"));
+        var elementHour = parseInt($(this).attr("id").split('hour')[1]);
         
         // hour is styled to the past class
         if ( elementHour < currentHour ) {
-            $(this).removeClass(["present", "future"]).addClass("past");
+            $(this).addClass("past");
+            $(this).removeClass("present");
+            $(this).removeClass("future");
         }
         // hour is styled to the present class
         else if ( elementHour === currentHour ) {
-            $(this).removeClass(["past", "future"]).addClass("present");
+            $(this).removeClass("past");
+            $(this).addClass("present");
+            $(this).removeClass("future");
         }
         // hour is styled to the future class
         else {
-            $(this).removeClass(["past", "present"]).addClass("future");
+            $(this).removeClass("past");
+            $(this).removeClass("present");
+            $(this).addClass("future");
         }
     })
 };
 hourTracker()
 
-//if time pass
-            //set to a color
-        //if time equal time
-            //set to a color
-        //else time has not come
-            //set to this color
-
-
+$("#hour9 .description").val(localStorage.getItem("hour9"));
 // WHEN I scroll down
 // THEN I am presented with time blocks for standard business hours
 //create rows for each hour from 9am-5pm
