@@ -1,4 +1,4 @@
-# JavaScript Quiz
+# Workday Schedule
 
 
 ## Description
