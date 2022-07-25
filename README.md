@@ -14,11 +14,8 @@ I've included the features below using:
 - The schedule incorporates moment.js which allow the program to:
 	- Display time within the program.
 	- Keeps track of what hours have past, is current, or hasn't occurred yet.
-
 - The schedule is equip with a built in storage so the user's input can be saved.
 - Color of the calendar changes depending on if the time has passed, is current, or hasn't occurred yet.
-
-  
 
 What's to come:
 
@@ -29,10 +26,9 @@ What's to come:
 - All user input can be clear with a press of a button.
 - Will include more hours outside of the work hours.
 
-  
 
 ## Images
-![description of photo](photo path);
+![Workday scheduler](./images/workdayScreenshot.png);
   
 
 ## Credits
