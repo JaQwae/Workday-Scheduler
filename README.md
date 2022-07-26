@@ -29,7 +29,6 @@ What's to come:
 
 ## Images
 ![Workday scheduler](./images/workdayScreenshot.png);
-  
 
 ## Credits
 
