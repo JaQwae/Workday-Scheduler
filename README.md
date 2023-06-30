@@ -5,7 +5,7 @@
 
 This project is for the user with a busy work life. The purpose for the program is to allow a user to organize, manage, and execute the various task for there day. 
 
- [Deployed link](https://jaqwae.github.io/workday-scheduler/)
+ [Deployed link](https://jaqwae.github.io/Workday-Scheduler/)
 
 ## Features
 
